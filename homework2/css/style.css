@@ -1,0 +1,92 @@
+.container{
+    margin:0 auto;
+    width: 1280px;
+}
+.header{
+    margin-bottom: 51px;
+}
+.header-main-logo-link{
+    text-decoration: none;
+    font-size: 80px;
+    color: black;
+    display: block;
+    margin: 45px 0 45px 0;
+}
+.header-main-logo-another-color{
+    color: rgb(75,202,255);
+}
+.main-menu-selection{
+    background: rgb(53,68,79);
+    text-align: center;
+}
+.main-menu-selection a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    padding: 26px 43px 21px 43px;
+}
+.main-menu-selection a:hover{
+    border-left-color:white;
+    border-right-color:white;
+}
+.left-menu-and-image{
+    display: inline-block;
+    vertical-align: top;
+}
+.left-menu{
+    border: 1px solid black;
+    width: 344px;
+    margin-right: 53px;
+}
+.left-menu a{
+    display: block;
+    text-decoration: none;
+    color: rgb(73,88,99);
+    font-size: 27px;
+    padding: 25px 0 25px 42px;
+}
+.left-menu a:hover{
+    padding-left: 70px;
+    background: rgb(219,219,219);
+}
+.right-image{
+    border: black 1px solid;
+}
+.right-image img{
+    padding:74px 277px 74px 277px ;
+    transition: transform 1s
+}
+.right-image img:hover{
+    transform: scale(1.2);
+}
+.content{
+    padding: 51px 35px 0 403px;
+    margin-bottom: 30px;
+}
+.footer{
+    background: rgb(180,183,186);
+}
+.footer *{
+    display: inline-block;
+
+}
+.footer a:first-child{
+    padding-left: 42px ;
+}
+.footer a{
+    padding: 22px 22px 22px 0;
+    font-size: 27px;
+    text-decoration: none;
+    color: black;
+}
+.footer a:hover{
+    color: rgb(49,129,166);
+    text-decoration: underline;
+}
+.footer p{
+    font-size: 24px;
+    padding-left: 210px;
+}

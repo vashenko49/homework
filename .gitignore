@@ -1,0 +1,12 @@
+# folder ignore
+*/.idea/
+*/psd-photoshop/
+homework4/
+homework5/
+homework6/
+homework7/
+homework8_optional/
+# files ignore
+*.iml
+*.xml
+*.md

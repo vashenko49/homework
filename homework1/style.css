@@ -1,0 +1,65 @@
+body{
+    margin:0;
+}
+.full-pager{
+    background-color: #f5f6f7 ;
+    width: 1280px;
+    margin: auto;
+    position: relative;
+}
+.head{
+    align-content: center;
+    text-align: center;
+    background-color: white;
+    margin-top: 35px;
+    padding-bottom: 35px;
+}
+.head a{
+    margin-right: 70px;
+    text-decoration: none;
+    color: #16a085;
+    font-family: ﻿AdobeInvisFont, ﻿Roboto-Black, ﻿Courier;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+}
+.content{
+    margin: 56px 113px 112px;
+    text-align: center;
+}
+.content h2{
+    font-family: ﻿AdobeInvisFont, ﻿Roboto-Black, ﻿Courier;
+    font-size: 29px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.content p{
+    font-family: ﻿AdobeInvisFont, ﻿Roboto-Black, ﻿Courier;
+    font-size: 21px;
+}
+.content-button{
+   width: 192px;
+    height: 51px;
+    background-color: #16a085;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-button a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px ;
+    text-decoration: none;
+
+}
+.footer{
+    padding-left: 768px;
+    padding-top: 47px;
+    background-color: white;
+}
+.footer p{
+    font-weight: bold;
+    font-family: ﻿AdobeInvisFont, ﻿Roboto-Black, ﻿Courier;
+    font-size: 21px;
+}
