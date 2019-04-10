@@ -4,7 +4,6 @@
 }
 .container{
     width: 1070px;
-    height: 95vh;
     margin: 0 auto;
     padding-top: 50px;
 }
@@ -51,7 +50,7 @@
 }
 .content{
     margin-top: 48px;
-    margin-bottom: 61px;
+
 }
 .content:after{
     content: "";
@@ -63,12 +62,13 @@
     width: 308px;
     float: left;
     margin-right: 72px;
+    margin-bottom: 50px;
 }
 .pack-box3{
-    margin: 0;
+    margin-right: 0;
 }
 .pack-box6{
-    margin: 0;
+    margin-right: 0;
 }
 
 .block {
@@ -125,7 +125,8 @@
     font-size: 12px;
     color: white;
     text-align: center;
+    padding-bottom: 20px;
 }
-.pack-box:hover .header-logo-slogan{
+.pack-box:hover .block-details{
     color: #f26522;
 }
