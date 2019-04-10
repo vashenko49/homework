@@ -25,7 +25,7 @@
     font-size: 29px;
     font-weight: bold;
     font-family: Verdana;
-    color: #f26522;
+    color: white;
     line-height: 22px;
 }
 .header-logo>p>span{
@@ -126,6 +126,6 @@
     color: white;
     text-align: center;
 }
-.pack-box:hover .header-logo-img{
-    background-image: url("../img/logo.png");
+.pack-box:hover .header-logo-slogan{
+    color: #f26522;
 }
