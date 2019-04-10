@@ -1,0 +1,131 @@
+.main-background-block{
+    background: url("../img/background.png") no-repeat center center fixed;
+    background-size: cover;
+}
+.container{
+    width: 1070px;
+    height: 95vh;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.header{
+
+}
+.header:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.header-logo{
+    float: left;
+    width: 167px;
+}
+.header-logo>p{
+    font-size: 29px;
+    font-weight: bold;
+    font-family: Verdana;
+    color: #f26522;
+    line-height: 22px;
+}
+.header-logo>p>span{
+    font-size: 18px;
+}
+.header-logo-img{
+    width: 46px;
+    height: 44px;
+    background-image: url("../img/logo2.png");
+    float: left;
+    margin-right: 12px;
+}
+.header-contacts{
+    float: right;
+    text-align: right;
+    width: 220px;
+}
+.header-contacts>p{
+    color: white;
+    font-size: 18px;
+    display: inline;
+    text-align: center;
+}
+.content{
+    margin-top: 48px;
+    margin-bottom: 61px;
+}
+.content:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.pack-box{
+    width: 308px;
+    float: left;
+    margin-right: 72px;
+}
+.pack-box3{
+    margin: 0;
+}
+.pack-box6{
+    margin: 0;
+}
+
+.block {
+
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to top, transparent 0%, white 100%);
+    border-image-slice: 1;
+}
+
+.block:hover .block-info {
+    bottom: 0;
+}
+
+.block-info {
+    position: absolute;
+    bottom: -63px;
+    width: 101%;
+    height: 47px;
+    background: #f26522;
+    transition: 0.5s linear;
+    padding-top: 16px;
+    padding-left: 22px;
+
+}
+.block-price {
+    display: inline-block;
+    width: 40px;
+    color: white;
+    font-size: 20px;
+}
+.block-price>p:first-child{
+    font-size: 10px;
+}
+.block-details {
+    padding-left: 125px;
+    width: 115px;
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+
+}
+.block-details>p:after{
+    content: '\00A0\003E';
+}
+.block-text{
+    font-size: 18px;
+    color: white;
+    padding-top: 21px;
+    text-align: center;
+}
+.footer{
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+.pack-box:hover .header-logo-img{
+    background-image: url("../img/logo.png");
+}
