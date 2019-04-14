@@ -31,6 +31,7 @@
 .main-menu-selection a:hover{
     border-left-color:white;
     border-right-color:white;
+    background: rgb(34,47,58);
 }
 .left-menu-and-image{
     display: inline-block;
@@ -69,7 +70,7 @@
 .footer{
     background: rgb(180,183,186);
 }
-.footer *{
+.footer >p,a{
     display: inline-block;
 
 }
