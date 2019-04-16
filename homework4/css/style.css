@@ -1,0 +1,59 @@
+.main-div-on-pager{
+    background: url("../img/rana-sawalha-364253-unsplash.png");
+    background-size: cover;
+}
+.header{
+    background: rgba(0,0,0,0.5);
+    padding-top: 20px;
+}
+.header-logo{
+    float: left;
+    display: block;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+}
+.header-logo:hover{
+    color: rgb(60,184,120);
+}
+.header-icons-registration{
+    float: right;
+    margin-right: 92px;
+
+}
+.header-icons-registration>a{
+    font-size: 14px;
+    color: white;
+    margin-right: 28px ;
+}
+.fa-calendar-alt:hover{
+    color: rgb(60,184,120);
+}
+.fa-comments:hover{
+    color: rgb(60,184,120);
+}
+.fa-compass:hover{
+    color: rgb(60,184,120);
+}
+.header-registration{
+    font-size: 14px;
+    display: inline-block;
+    color: white;
+    border-left: 2px solid rgb(48,47,46);
+    padding-left: 24px;
+}
+.header-registration>a{
+    color: rgb(60,184,120);
+}
+.header-log-in:hover{
+    text-decoration: underline;
+}
+.header-sing-up:hover{
+    text-decoration: underline;
+}
+.header:after{
+    content: "";
+    display: block;
+    clear: both;
+}
