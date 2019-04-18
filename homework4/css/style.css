@@ -1,6 +1,7 @@
 .main-div-on-pager{
     background: url("../img/rana-sawalha-364253-unsplash.png");
     background-size: cover;
+    min-width: 725px;
 }
 .header{
     background: rgba(0,0,0,0.5);
@@ -17,6 +18,40 @@
 .header-logo:hover{
     color: rgb(60,184,120);
 }
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.sprite-ic_caledar {
+    background-position: -4px -4px;
+}
+
+.sprite-ic_caledar:hover {
+    background-position: -4px -31px;
+}
+
+.sprite-ic_forum {
+    width: 28px;
+    background-position: -4px -58px;
+}
+
+.sprite-ic_forum:hover {
+    width: 28px;
+    background-position: -4px -86px;
+}
+
+.sprite-ic_journey {
+    background-position: -4px -114px;
+}
+
+.sprite-ic_journey:hover {
+    background-position: -4px -142px;
+}
+
 .header-icons-registration{
     float: right;
     margin-right: 92px;
@@ -56,4 +91,115 @@
     content: "";
     display: block;
     clear: both;
+}
+.registration{
+    width: 445px;
+    padding: 30px 62px;
+    background: white;
+    border-radius:18px ;
+    margin:65px auto;
+
+}
+.registration-log-in-sing-in{
+
+}
+.registration-log-in:before{
+     content: "";
+     display: inline-block;
+     width: 18px;
+     height: 18px;
+     background: rgb(60,184,120);
+     position: relative;
+     right: 62px;
+ }
+.registration-log-in{
+
+    float: left;
+    font-size: 20px;
+}
+
+.registration-sing-in{
+    float: right;
+    font-size: 14px;
+    color: rgb(60,184,120);
+}
+.registration-sing-in:hover{
+    text-decoration: underline;
+}
+.registration-log-in-sing-in:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.button-facebook-google{
+    width: 330px;
+    margin:15px  auto 33px auto;
+}
+.button-twice{
+    width: 157px;
+    display: inline-block;
+    text-align: left;
+    padding: 9px 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.button-facebook{
+    background-color: rgb(48,93,184);
+}
+.button-facebook>a{
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding-left: 16px;
+}
+.button-facebook:hover{
+    background-color: rgb(38,75,150);
+}
+.button-facebook:before{
+    content: "";
+    background-image: url(../img/spritesheet-icon-button.png);
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 20px;
+    background-position: -5px -31px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 17px;
+    border-right: black solid 1px;
+}
+.button-google{
+    background-color:rgb(223,74,50);
+}
+.button-google>a{
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding-left: 16px;
+}
+.button-google:hover{
+    background-color: rgb(195,65,44);
+}
+.button-google:before{
+    content: "";
+    background-image: url(../img/spritesheet-icon-button.png);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 20px;
+    background-position: -5px -5px;
+    display: inline-block;
+    vertical-align:middle;
+    padding-right: 10px ;
+    border-right: black solid 1px;
+}
+.registration-line-or{
+    display: block;
+    color: rgb(132,132,132);
+    margin:  auto;
+}
+.registration-line-or:after,.registration-line-or:before{
+    content: "";
+    display: inline-block;
+    width: 135px;
+    height: 1px;
+    border-top: 5px solid rgb(234,234,234);
 }
