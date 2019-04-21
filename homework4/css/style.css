@@ -2,204 +2,264 @@
     background: url("../img/rana-sawalha-364253-unsplash.png");
     background-size: cover;
     min-width: 725px;
+    height: 100vh;
 }
 .header{
     background: rgba(0,0,0,0.5);
-    padding-top: 20px;
+    padding:20px 80px 43px 80px;
 }
 .header-logo{
-    float: left;
-    display: block;
-    margin-left: 150px;
-    margin-bottom: 20px;
-    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
     font-size: 20px;
+    color: white;
+    display: inline-block;
+    float: left;
 }
 .header-logo:hover{
-    color: rgb(60,184,120);
+    color: #3cb878;
 }
-.sprite {
+.header-icon-registration{
+    float: right;
+}
+.icon{
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     display: inline-block;
+}
+.icon-header{
+    margin-right:28px ;
+}
+.icon-calendar{
+    width: 19px;
+    height: 19px;
+    background-position: -20px -80px;
+}
+.icon-calendar:hover{
+    background-position: -79px -80px;
+}
+.icon-forum{
+    width: 28px;
+    height: 20px;
+    background-position: -135px -20px;
+}
+.icon-forum:hover{
+    background-position: -138px -80px;
+}
+.icon-journey{
     width: 20px;
     height: 20px;
+    background-position: -20px -140px;
 }
-
-.sprite-ic_caledar {
-    background-position: -4px -4px;
-}
-
-.sprite-ic_caledar:hover {
-    background-position: -4px -31px;
-}
-
-.sprite-ic_forum {
-    width: 28px;
-    background-position: -4px -58px;
-}
-
-.sprite-ic_forum:hover {
-    width: 28px;
-    background-position: -4px -86px;
-}
-
-.sprite-ic_journey {
-    background-position: -4px -114px;
-}
-
-.sprite-ic_journey:hover {
-    background-position: -4px -142px;
-}
-
-.header-icons-registration{
-    float: right;
-    margin-right: 92px;
-
-}
-.header-icons-registration>a{
-    font-size: 14px;
-    color: white;
-    margin-right: 28px ;
-}
-.fa-calendar-alt:hover{
-    color: rgb(60,184,120);
-}
-.fa-comments:hover{
-    color: rgb(60,184,120);
-}
-.fa-compass:hover{
-    color: rgb(60,184,120);
+.icon-journey:hover{
+    background-position: -80px -140px;
 }
 .header-registration{
-    font-size: 14px;
+    padding-left: 28px;
+    border-left: 1px solid #302f2e;
     display: inline-block;
+    font-family: sans-serif;
+    font-size: 14px;
     color: white;
-    border-left: 2px solid rgb(48,47,46);
-    padding-left: 24px;
 }
 .header-registration>a{
-    color: rgb(60,184,120);
+    color: #3cb878;
 }
-.header-log-in:hover{
+.header-registration-log-in:hover{
     text-decoration: underline;
 }
-.header-sing-up:hover{
+.header-registration-sign-in:hover{
     text-decoration: underline;
 }
-.header:after{
+.header-logo:after {
     content: "";
-    display: block;
     clear: both;
+    display: block;
 }
-.registration{
-    width: 445px;
-    padding: 30px 62px;
-    background: white;
-    border-radius:18px ;
-    margin:65px auto;
+.registration-window{
+    width: 440px;
+    box-sizing: border-box;
+    padding: 30px 60px 30px 60px;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    margin: 65px auto 0 auto;
 
 }
-.registration-log-in-sing-in{
+.registration-window-log-in{
 
 }
-.registration-log-in:before{
-     content: "";
-     display: inline-block;
-     width: 18px;
-     height: 18px;
-     background: rgb(60,184,120);
-     position: relative;
-     right: 62px;
- }
-.registration-log-in{
-
+.registration-sign-in{
     float: left;
+    display: inline-block;
+    font-family: sans-serif;
     font-size: 20px;
 }
-
-.registration-sing-in{
-    float: right;
-    font-size: 14px;
-    color: rgb(60,184,120);
+.registration-sign-in:before{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #3cb878;
 }
-.registration-sing-in:hover{
+.registration-log-in{
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #3cb878;
+    float: right;
+}
+.registration-log-in:hover{
     text-decoration: underline;
 }
-.registration-log-in-sing-in:after{
+.registration-window-log-in:after{
     content: "";
-    clear: both;
     display: block;
+    clear: both;
 }
-.button-facebook-google{
-    width: 330px;
-    margin:15px  auto 33px auto;
-}
-.button-twice{
-    width: 157px;
-    display: inline-block;
-    text-align: left;
-    padding: 9px 20px;
-    box-sizing: border-box;
-    border-radius: 8px;
+.registration-button{
+    margin-top:18px ;
 }
 .button-facebook{
-    background-color: rgb(48,93,184);
+    position: relative;
+    background-color:#305db8 ;
+    width: 156px;
+    height: 46px;
+    box-sizing: border-box;
+    float: left;
+    padding: 13px 0 8px 0;
+    text-align: center;
+    border-radius: 4px;
 }
-.button-facebook>a{
-    color: white;
-    font-size: 16px;
+.button-facebook-inscription{
+    display: inline-block;
+    padding: 2px 0 2px 18px;
+    border-left: 1px solid #2b54a5;
     font-family: sans-serif;
-    padding-left: 16px;
+    font-size: 14px;
+    color: white;
+}
+.button-facebook-inscription:before{
+    position: absolute;
+    left: 8px;
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background-image: url("../img/spritesheet.png");
+    background-position: -77px -20px;
 }
 .button-facebook:hover{
-    background-color: rgb(38,75,150);
-}
-.button-facebook:before{
-    content: "";
-    background-image: url(../img/spritesheet-icon-button.png);
-    background-repeat: no-repeat;
-    width: 10px;
-    height: 20px;
-    background-position: -5px -31px;
-    display: inline-block;
-    vertical-align: middle;
-    padding-right: 17px;
-    border-right: black solid 1px;
+    background-color: #264b96;
 }
 .button-google{
-    background-color:rgb(223,74,50);
-}
-.button-google>a{
-    color: white;
-    font-size: 16px;
-    font-family: sans-serif;
-    padding-left: 16px;
+    position: relative;
+    background-color:#df4a32 ;
+    width: 156px;
+    height: 46px;
+    box-sizing: border-box;
+    float: right;
+    padding: 13px 0 8px 0;
+    text-align: center;
+    border-radius: 4px;
 }
 .button-google:hover{
-    background-color: rgb(195,65,44);
+    background-color: #c3412c;
 }
-.button-google:before{
-    content: "";
-    background-image: url(../img/spritesheet-icon-button.png);
-    background-repeat: no-repeat;
-    width: 32px;
-    height: 20px;
-    background-position: -5px -5px;
+.button-google-inscription{
     display: inline-block;
-    vertical-align:middle;
-    padding-right: 10px ;
-    border-right: black solid 1px;
+    padding: 2px 0 2px 18px;
+    border-left: 1px solid #af3a28;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: white;
 }
-.registration-line-or{
+.button-google-inscription:before{
+    position: absolute;
+    left: 15px;
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background-image: url("../img/spritesheet.png");
+    background-position: -20px -20px;
+}
+.registration-button:after{
+    content: "";
     display: block;
-    color: rgb(132,132,132);
-    margin:  auto;
+    clear: both;
 }
-.registration-line-or:after,.registration-line-or:before{
+
+
+.separator-or{
+    position: relative;
+    text-align: center;
+    margin: 33px 0 20px 0;
+}
+.separator-or-inscription{
+    font-family: sans-serif;
+    display: inline-block;
+    color: #848484;
+    font-size: 14px;
+
+}
+.separator-or-inscription:before{
+    position: absolute;
+    top: 10px;
+    left: 0;
     content: "";
     display: inline-block;
     width: 135px;
     height: 1px;
-    border-top: 5px solid rgb(234,234,234);
+    background-color: #848484;
+}
+.separator-or-inscription:after{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    content: "";
+    display: inline-block;
+    width: 135px;
+    height: 1px;
+    background-color: #848484;
+}
+input[type="text"],input[type="email"],input[type="password"]{
+    padding: 18px 0 18px 18px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px;
+    border: #848484 solid 1px;
+    margin: 9px 0 9px 0;
+
+}
+input[type="text"]:focus,input[type="text"]:active,input[type="email"]:focus,input[type="email"]:active,input[type="password"]:focus,input[type="password"]:active{
+    outline: transparent;
+    border: 1px solid transparent;
+    box-shadow: 0 0 4px  4px gray;
+}
+.registration-checkbox{
+    font-family: sans-serif;
+    font-size: 14px;
+    display: block;
+    margin: 25px 0 25px 0;
+
+}
+.registration-checkbox-rules{
+    color: #3cb878;
+}
+.registration-checkbox-rules:hover{
+    text-decoration: underline;
+}
+
+.registration-button-submit{
+    width: 100%;
+    height: 45px;
+    background-color: #3cb878;
+    color: white;
+    font-size: 16px;
+}
+.registration-button-submit:hover{
+    background-color: #329a65;
 }

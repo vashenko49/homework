@@ -9,28 +9,43 @@
 <body>
     <div class="main-div-on-pager">
         <div class="header">
-            <a href="#" class="header-logo">
-                JOURNEY
-            </a>
-            <div class="header-icons-registration">
-                    <a href=""><i class="sprite sprite-ic_caledar"></i></a>
-                    <a href=""><i class="sprite sprite-ic_forum"></i></a>
-                    <a href=""><i class="sprite sprite-ic_journey"></i></a>
-                    <p class="header-registration">Welcome, <a class="header-log-in" href="#">Log In</a> or <a class="header-sing-up" href="#">Sign Up</a></p>
+            <a href="#" class="header-logo">JOURNEY</a>
+            <div class="header-icon-registration">
+                <a href="" class="icon icon-header icon-calendar"></a>
+                <a href="" class="icon icon-header icon-forum"></a>
+                <a href="" class="icon icon-header icon-journey"></a>
+                <p class="header-registration">Welcome, <a class="header-registration-log-in" href="#">Log In</a> or <a class="header-registration-sign-in" href="#">Sign Up</a></p>
             </div>
         </div>
-        <div class="registration">
-            <div class="registration-log-in-sing-in">
-                <p class="registration-log-in">Sign Up</p>
-                <a href="#" class="registration-sing-in">Log In</a>
+        <div class="registration-window">
+            <div class="registration-window-log-in">
+                <p class="registration-sign-in">Sign Up</p>
+                <a href="#" class="registration-log-in">Log In</a>
             </div>
-            <div class="button-facebook-google">
-                <div class="button-twice button-facebook"><a href="#">Facebook</a></div>
-                <div class="button-twice button-google"><a href="#">Google</a></div>
+            <div class="registration-button">
+                <a href="#" class="button-facebook">
+                    <p class="button-facebook-inscription">Facebook</p>
+                </a>
+                <a href="#" class="button-google">
+                    <p class="button-google-inscription">Google</p>
+                </a>
             </div>
-            <div class="registration-line-or"><p>or</p></div>
-        </div>
+            <div class="separator-or">
+                <p class="separator-or-inscription">or</p>
+            </div>
 
+            <div class="registration-form">
+                <form action="#">
+                    <input name="firs-name" type="text" placeholder="Firs name" required>
+                    <input name="last-name" type="text" placeholder="Last Name" required>
+                    <input name="email" type="email" placeholder="Email" required>
+                    <input name="password" type="password" placeholder="Choose Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <label class="registration-checkbox"><input type="checkbox">Agree our <a href="#" class="registration-checkbox-rules">Terms &amp; Conditions</a></label>
+                    <input class="registration-button-submit" type="submit" value="Create Account">
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
