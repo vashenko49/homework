@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Journey</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/ic_journey_active.png">
 </head>
 <body>
     <div class="main-div-on-pager">
@@ -41,11 +42,13 @@
                     <input name="email" type="email" placeholder="Email" required>
                     <input name="password" type="password" placeholder="Choose Password" required>
                     <input type="password" placeholder="Confirm Password" required>
-                    <label class="registration-checkbox"><input type="checkbox">Agree our <a href="#" class="registration-checkbox-rules">Terms &amp; Conditions</a></label>
+                    <input type="checkbox" id="agree" required>
+                    <label class="registration-checkbox"  for="agree">Agree our <a href="#" class="registration-checkbox-rules">Terms &amp; Conditions</a></label>
                     <input class="registration-button-submit" type="submit" value="Create Account">
                 </form>
             </div>
         </div>
+        <div class="footer"></div>
     </div>
 </body>
 </html>

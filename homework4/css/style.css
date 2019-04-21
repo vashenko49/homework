@@ -2,7 +2,7 @@
     background: url("../img/rana-sawalha-364253-unsplash.png");
     background-size: cover;
     min-width: 725px;
-    height: 100vh;
+
 }
 .header{
     background: rgba(0,0,0,0.5);
@@ -242,7 +242,7 @@ input[type="text"]:focus,input[type="text"]:active,input[type="email"]:focus,inp
 .registration-checkbox{
     font-family: sans-serif;
     font-size: 14px;
-    display: block;
+    display: inline-block;
     margin: 25px 0 25px 0;
 
 }
@@ -262,4 +262,53 @@ input[type="text"]:focus,input[type="text"]:active,input[type="email"]:focus,inp
 }
 .registration-button-submit:hover{
     background-color: #329a65;
+}
+
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked){
+    position: absolute;
+    left: -9999px;
+}
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label{
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after{
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid #3cb878;
+    border-bottom: 4px solid #3cb878;
+    transform: rotate(-45deg);
+}
+input[type="checkbox"]:not(:checked) + label:after{
+    opacity: 0;
+}
+input[type="checkbox"]:checked + label:after{
+    opacity: 1;
+}
+.footer{
+    padding-bottom: 100px;
 }
