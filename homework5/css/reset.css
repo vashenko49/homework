@@ -1,0 +1,7 @@
+body,p,a,span{
+    padding: 0;
+    margin: 0;
+}
+a:link{
+    text-decoration: none;
+}
