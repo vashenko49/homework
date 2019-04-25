@@ -4,68 +4,77 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/create-font.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <form action="#">
-    <table border="1">
-        <thead>
-        <tr>
-            <th rowspan="2">Choose your pricing plan</th>
-            <th>standard</th>
-            <th>ultimate</th>
-            <th>premium</th>
-        </tr>
-        <tr>
-            <th>Per Month</th>
-            <th>Per Month</th>
-            <th>Per Month</th>
-        </tr>
+    <table class="table-elementary-level">
+        <thead class="table-elementary-level-head">
+            <tr class="elementary-row-head">
+                <th rowspan="2" class="elementary-row-head-big-row">Choose your <span class="elementary-row-head-big-row-second">pricing plan</span></span></th>
+                <th class="row-standard">standard</th>
+                <th class="row-ultimate">ultimate</th>
+                <th class="row-premium">premium</th>
+             </tr>
+            <tr class="elementary-row-head">
+                <th class="row-standard-prise">Per Month</th>
+                <th class="row-ultimate-prise">Per Month</th>
+                <th class="row-premium-prise">Per Month</th>
+            </tr>
         </thead>
-        <tbody>
-        <tr>
-            <td><i class="fas fa-archive"></i>Storage</td>
+        <tbody class="table-elementary-level-body">
+        <tr class="elementary-row-body">
+            <td><i class="fas fa-archive icon-something"></i>Storage</td>
             <td>500GB Storage</td>
             <td>1000GB Storage</td>
             <td>2000GB Storage</td>
         </tr>
-        <tr>
-            <td><i class="fas fa-cloud-upload-alt"></i>Bandwidth</td>
+        <tr class="elementary-row-body">
+            <td><i class="fas fa-cloud-upload-alt icon-something"></i>Bandwidth</td>
             <td colspan="2">limited</td>
             <td>unlimited</td>
         </tr>
-        <tr>
-            <td><i class="fas fa-envelope"></i>Email</td>
+        <tr class="elementary-row-body">
+            <td><i class="fas fa-envelope icon-something"></i>Email</td>
             <td>25 emails</td>
             <td>45 emails</td>
             <td>65 emails</td>
         </tr>
-        <tr>
-            <td><i class="far fa-life-ring"></i>support</td>
+        <tr class="elementary-row-body">
+            <td><i class="far fa-life-ring icon-something"></i>support</td>
             <td colspan="3">24/7 support</td>
 
         </tr>
-        <tr>
-            <td><i class="fas fa-cube"></i>products</td>
+        <tr class="elementary-row-body">
+            <td><i class="fas fa-cube icon-something"></i>products</td>
             <td>20 products</td>
             <td>30 products</td>
             <td>60 products</td>
         </tr>
-        <tr>
-            <td><i class="fas fa-users"></i>users</td>
+        <tr class="elementary-row-body">
+            <td><i class="fas fa-users icon-something"></i>users</td>
             <td>1 user</td>
-            <td>10 user</td>
-            <td>15 user</td>
+            <td>10 users</td>
+            <td>15 users</td>
         </tr>
         </tbody>
-        <tfoot>
-        <tr>
-            <td><input type="button" value="contact us"></td>
-            <td><input type="button" value="buy now"></td>
-            <td><input type="button" value="buy now"></td>
-            <td><input type="button" value="buy now"></td>
-        </tr>
+        <tfoot class="table-elementary-level-foot">
+        <tr class="elementary-row-foot">
+            <td>
+                <button class="foot-button foot-button-choose">contact us</button>
+            </td>
+            <td>
+                <button class="foot-button foot-button-standard">buy now</button>
+            </td>
+            <td>
+                <button class="foot-button foot-button-ultimate">buy now</button>
+            </td>
+            <td>
+                <button class="foot-button foot-button-premium">buy now</button>
+            </td>
+            </tr>
         </tfoot>
     </table>
 </form>

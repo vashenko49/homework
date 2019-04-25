@@ -1,3 +1,190 @@
-table{
+.table-elementary-level{
     border: 22px solid #3a4965;
+    font-family: Arimo;
+    border-collapse: collapse;
+    min-width: 1150px;
 }
+.table-elementary-level-head{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+tr{
+    height: 70px;
+}
+
+th:nth-child(n+1),td:nth-child(n+1)
+{
+    width: 275px;
+}
+.table-elementary-level-body,.table-elementary-level-foot{
+    text-align: center;
+}
+.table-elementary-level{
+    text-transform: uppercase;
+}
+
+
+.elementary-row-head-big-row{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.elementary-row-head-big-row-second{
+    font-size: 30px;
+    display: block;
+}
+.elementary-row-body:nth-child(odd){
+    background-color: #f2f2f2;
+}
+.elementary-row-body:nth-child(even){
+    background-color: #e3e3e3;
+}
+.row-ultimate,.row-premium,.row-standard{
+    color: white;
+    font-size: 24px;
+}
+.row-standard{
+    background-color: #89c331;
+}
+.row-ultimate{
+    background-color: #f04a56;
+}
+.row-premium{
+    background-color: #20807c;
+}
+.row-standard-prise,.row-ultimate-prise,.row-premium-prise{
+    font-weight: normal;
+    position: relative;
+}
+.row-standard-prise:before{
+    content: "$17";
+    font-size: 60px;
+    font-weight: bold;
+}
+.row-standard-prise:after{
+    content: ".99";
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 130px;
+    top: 8px;
+}
+.row-ultimate-prise:before{
+    content: "$37";
+    font-size: 60px;
+    font-weight: bold;
+}
+.row-ultimate-prise:after{
+    content: ".99";
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 130px;
+    top: 8px;
+}
+.row-premium-prise:before{
+    content: "$97";
+    font-size: 60px;
+    font-weight: bold;
+}
+.row-premium-prise:after{
+    content: ".99";
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 130px;
+    top: 8px;
+}
+.elementary-row-body{
+    font-size: 16px;
+    color: #484848;
+}
+
+.icon-something{
+    margin-right: 22px;
+}
+th,td{
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+}
+.elementary-row-foot{
+    height: 110px;
+}
+.table-elementary-level-foot td:first-child{
+    background-color: #dddddd;
+}
+
+.foot-button{
+    position: relative;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    width: 190px;
+    height: 50px;
+    outline: none;
+}
+.foot-button-choose{
+    background-color: #484848;
+}
+.foot-button-choose:after{
+    content: "";
+    display: inline-block;
+    width: 190px;
+    height: 7px;
+    position: absolute;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #404040;
+    top:43px;
+    right: 0;
+}
+.foot-button-standard{
+    background-color: #89c331;
+}
+.foot-button-standard:after{
+    content: "";
+    display: inline-block;
+    width: 190px;
+    height: 7px;
+    position: absolute;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #79b027;
+    top:43px;
+    right: 0;
+}
+.foot-button-ultimate{
+    background-color: #f04a56;
+}
+.foot-button-ultimate:after{
+    content: "";
+    display: inline-block;
+    width: 190px;
+    height: 7px;
+    position: absolute;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #df3a46;
+    top:43px;
+    right: 0;
+}
+.foot-button-premium{
+    background-color: #20807c;
+}
+.foot-button-premium:after{
+    content: "";
+    display: inline-block;
+    width: 190px;
+    height: 7px;
+    position: absolute;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #16736f;
+    top:43px;
+    right: 0;
+}
+
+
