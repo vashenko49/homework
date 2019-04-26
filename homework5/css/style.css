@@ -1,121 +1,100 @@
-.table-elementary-level{
+.first-table{
+    border-collapse: collapse;
     border: 22px solid #3a4965;
     font-family: Arimo;
-    border-collapse: collapse;
-    min-width: 1150px;
-}
-.table-elementary-level-head{
-    font-size: 18px;
     text-transform: uppercase;
-}
-
-tr{
-    height: 70px;
-}
-
-th:nth-child(n+1),td:nth-child(n+1)
-{
-    width: 275px;
-}
-.table-elementary-level-body,.table-elementary-level-foot{
     text-align: center;
-}
-.table-elementary-level{
-    text-transform: uppercase;
-}
-
-
-.elementary-row-head-big-row{
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-.elementary-row-head-big-row-second{
-    font-size: 30px;
-    display: block;
-}
-.elementary-row-body:nth-child(odd){
-    background-color: #f2f2f2;
-}
-.elementary-row-body:nth-child(even){
-    background-color: #e3e3e3;
-}
-.row-ultimate,.row-premium,.row-standard{
-    color: white;
-    font-size: 24px;
-}
-.row-standard{
-    background-color: #89c331;
-}
-.row-ultimate{
-    background-color: #f04a56;
-}
-.row-premium{
-    background-color: #20807c;
-}
-.row-standard-prise,.row-ultimate-prise,.row-premium-prise{
-    font-weight: normal;
     position: relative;
 }
-.row-standard-prise:before{
-    content: "$17";
-    font-size: 60px;
-    font-weight: bold;
+.table-column{
+    height: 70px;
 }
-.row-standard-prise:after{
-    content: ".99";
-    font-size: 24px;
-    font-weight: bold;
-    position: absolute;
-    left: 130px;
-    top: 8px;
+.table-row:nth-child(2){
+    height: 88px;
+    background-color: #fafafa;
 }
-.row-ultimate-prise:before{
-    content: "$37";
-    font-size: 60px;
-    font-weight: bold;
-}
-.row-ultimate-prise:after{
-    content: ".99";
-    font-size: 24px;
-    font-weight: bold;
-    position: absolute;
-    left: 130px;
-    top: 8px;
-}
-.row-premium-prise:before{
-    content: "$97";
-    font-size: 60px;
-    font-weight: bold;
-}
-.row-premium-prise:after{
-    content: ".99";
-    font-size: 24px;
-    font-weight: bold;
-    position: absolute;
-    left: 130px;
-    top: 8px;
-}
-.elementary-row-body{
-    font-size: 16px;
-    color: #484848;
-}
-
-.icon-something{
-    margin-right: 22px;
-}
-th,td{
-    border-left: 1px solid #d8d8d8;
-    border-right: 1px solid #d8d8d8;
-}
-.elementary-row-foot{
+.table-row:last-child{
     height: 110px;
 }
-.table-elementary-level-foot td:first-child{
+.table-column:first-child{
+    width: 310px;
+}
+.table-column:nth-child(n+2){
+    width: 278px;
+}
+.table-row:nth-child(2n+3){
+    background-color: #f2f2f2;
+}
+.table-row:nth-child(2n+4){
+    background-color: #e3e3e3;
+}
+.table-row:first-child .table-column:first-child{
+    background-color: #fafafa;
+}
+.table-row:last-child .table-column:nth-child(n+2){
+    background-color: #e3e3e3;
+}
+.table-row:last-child .table-column:first-child{
     background-color: #dddddd;
 }
+.table-row:nth-child(2){
+    color: #484848;
+}
+.table-row:nth-child(n+3){
+    color: #848484;
+}
+.icon-something{
+    padding-right: 13px;
+}
+.table-row:first-child .table-column:nth-child(n+2){
+    color: white;
+    font-size: 27px;
+}
+.table-column-standard{
+    background-color: #89c331;
+}
+.table-column-ultimate{
+    background-color: #f04a56;
+}
+.table-column-premium{
+    background-color: #20807c;
+}
 
-.foot-button{
+.table-prise{
+    position: relative;
+    font-size: 16px;
+}
+.table-prise:before{
+    content: "";
+    display: inline-block;
+    font-size: 60px;
+    font-weight:bold ;
+}
+.table-prise:after{
+    position: absolute;
+    content: ".99";
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    bottom: 23px;
+    left: 100px;
+}
+.table-row:nth-child(2) .table-column:first-child .table-prise:before{
+    content: "$17";
+}
+.table-row:nth-child(2) .table-column:nth-child(2) .table-prise:before{
+    content: "$37";
+}
+.table-row:nth-child(2) .table-column:last-child .table-prise:before{
+    content: "$97";
+}
+.first-row-first-column{
+    display: block;
+    font-size: 20px;
+}
+.table-button{
+    display: block;
+    margin: 0 auto;
     position: relative;
     font-size: 16px;
     color: white;
@@ -126,65 +105,55 @@ th,td{
     height: 50px;
     outline: none;
 }
-.foot-button-choose{
+
+.table-button:after{
+    content: "";
+    display: inline-block;
+    width: 190px;
+    height: 7px;
+    position: absolute;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    top:43px;
+    right: 0;
+}
+.table-button-choose{
     background-color: #484848;
 }
-.foot-button-choose:after{
-    content: "";
-    display: inline-block;
-    width: 190px;
-    height: 7px;
-    position: absolute;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+.table-button-choose:hover{
+     background-color: #404040;
+ }
+.table-button-choose:after{
     background-color: #404040;
-    top:43px;
-    right: 0;
 }
-.foot-button-standard{
+.table-button-standard{
     background-color: #89c331;
 }
-.foot-button-standard:after{
-    content: "";
-    display: inline-block;
-    width: 190px;
-    height: 7px;
-    position: absolute;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+.table-button-standard:hover{
     background-color: #79b027;
-    top:43px;
-    right: 0;
 }
-.foot-button-ultimate{
+.table-button-standard:after{
+    background-color: #79b027;
+}
+.table-button-ultimate{
     background-color: #f04a56;
 }
-.foot-button-ultimate:after{
-    content: "";
-    display: inline-block;
-    width: 190px;
-    height: 7px;
-    position: absolute;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+.table-button-ultimate:hover{
     background-color: #df3a46;
-    top:43px;
-    right: 0;
 }
-.foot-button-premium{
+.table-button-ultimate:after{
+    background-color: #df3a46;
+}
+.table-button-premium{
     background-color: #20807c;
 }
-.foot-button-premium:after{
-    content: "";
-    display: inline-block;
-    width: 190px;
-    height: 7px;
-    position: absolute;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+.table-button-premium:hover{
     background-color: #16736f;
-    top:43px;
-    right: 0;
 }
-
-
+.table-button-premium:after{
+    background-color: #16736f;
+}
+.table-column{
+    border-left:1px solid  #d8d8d8;
+    border-right:1px solid  #d8d8d8;
+}
