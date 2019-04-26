@@ -5,6 +5,7 @@
     text-transform: uppercase;
     text-align: center;
     position: relative;
+    min-width: 845px;
 }
 .table-column{
     height: 70px;
@@ -32,7 +33,7 @@
     background-color: #fafafa;
 }
 .table-row:last-child .table-column:nth-child(n+2){
-    background-color: #e3e3e3;
+    background-color: #eeeeee;
 }
 .table-row:last-child .table-column:first-child{
     background-color: #dddddd;
