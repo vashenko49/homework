@@ -1,34 +1,32 @@
 .main-div-on-pager{
-    background: url("../img/rana-sawalha-364253-unsplash.png");
-    background-size: cover;
+    background: url("../img/rana-sawalha-364253-unsplash.png") no-repeat;
+    background-size:cover;
     min-width: 725px;
-
+    min-height: 105vh;
+    font-family: sans-serif;
 }
-.header{
-    background: rgba(0,0,0,0.5);
-    padding:20px 80px 43px 80px;
+.header-on-page{
+     background: rgba(0,0,0,0.4);
+     padding:20px 80px 20px 80px;
 }
 .header-logo{
-    font-family: sans-serif;
     text-transform: uppercase;
     font-size: 20px;
+    font-weight: bold;
     color: white;
-    display: inline-block;
     float: left;
 }
 .header-logo:hover{
     color: #3cb878;
 }
 .header-icon-registration{
-    float: right;
+    float:right;
 }
+
 .icon{
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     display: inline-block;
-}
-.icon-header{
-    margin-right:28px ;
 }
 .icon-calendar{
     width: 19px;
@@ -54,64 +52,62 @@
 .icon-journey:hover{
     background-position: -80px -140px;
 }
-.header-registration{
-    padding-left: 28px;
-    border-left: 1px solid #302f2e;
+.icon-journey:after{
+    content: "";
     display: inline-block;
-    font-family: sans-serif;
-    font-size: 14px;
-    color: white;
+    width: 2px;
+    height: 20px;
+    background-color: #7d7873;
+    position: relative;
+    left: 48px
+
 }
-.header-registration>a{
+.icon-header{
+     margin-right:28px ;
+ }
+.header-registration{
+    margin-left:20px ;
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+}
+.effect-underline{
     color: #3cb878;
 }
-.header-registration-log-in:hover{
+.effect-underline:hover{
     text-decoration: underline;
 }
-.header-registration-sign-in:hover{
-    text-decoration: underline;
-}
-.header-logo:after {
-    content: "";
-    clear: both;
-    display: block;
-}
+.header-on-page:after{
+     content: "";
+     display: block;
+     clear: both;
+ }
 .registration-window{
-    width: 440px;
-    box-sizing: border-box;
+    width: 320px;
     padding: 30px 60px 30px 60px;
-    position: relative;
     background-color: white;
     border-radius: 10px;
-    margin: 65px auto 0 auto;
-
+    margin: 65px auto;
 }
-.registration-window-log-in{
 
-}
 .registration-sign-in{
+    position: relative;
     float: left;
-    display: inline-block;
-    font-family: sans-serif;
     font-size: 20px;
 }
 .registration-sign-in:before{
-    display: inline-block;
-    position: absolute;
-    left: 0;
     content: "";
+    display: inline-block;
     width: 18px;
     height: 18px;
     background-color: #3cb878;
+    position: absolute;
+    left: -60px;
 }
 .registration-log-in{
-    font-family: sans-serif;
+    float: right;
     font-size: 14px;
     color: #3cb878;
-    float: right;
-}
-.registration-log-in:hover{
-    text-decoration: underline;
 }
 .registration-window-log-in:after{
     content: "";
@@ -119,30 +115,29 @@
     clear: both;
 }
 .registration-button{
-    margin-top:18px ;
+    margin-top: 15px;
 }
-.button-facebook{
+.button-facebook {
     position: relative;
-    background-color:#305db8 ;
-    width: 156px;
-    height: 46px;
-    box-sizing: border-box;
+    background-color: #305db8;
     float: left;
-    padding: 13px 0 8px 0;
-    text-align: center;
     border-radius: 4px;
+    width: 156px;
+    height: 26px;
+    padding: 14px 0 6px 0;
+
+}
+.button-facebook:hover{
+    background-color: #264b96;
 }
 .button-facebook-inscription{
-    display: inline-block;
-    padding: 2px 0 2px 18px;
-    border-left: 1px solid #2b54a5;
-    font-family: sans-serif;
-    font-size: 14px;
     color: white;
+    margin-left: 65px;
 }
 .button-facebook-inscription:before{
     position: absolute;
-    left: 8px;
+    left: 17px;
+    top: 11px;
     content: "";
     display: inline-block;
     width: 25px;
@@ -150,34 +145,26 @@
     background-image: url("../img/spritesheet.png");
     background-position: -77px -20px;
 }
-.button-facebook:hover{
-    background-color: #264b96;
-}
 .button-google{
     position: relative;
-    background-color:#df4a32 ;
-    width: 156px;
-    height: 46px;
-    box-sizing: border-box;
+    background-color: #df4a32;
     float: right;
-    padding: 13px 0 8px 0;
-    text-align: center;
     border-radius: 4px;
+    width: 156px;
+    height: 26px;
+    padding: 14px 0 6px 0;
 }
 .button-google:hover{
     background-color: #c3412c;
 }
 .button-google-inscription{
-    display: inline-block;
-    padding: 2px 0 2px 18px;
-    border-left: 1px solid #af3a28;
-    font-family: sans-serif;
-    font-size: 14px;
     color: white;
+    margin-left: 65px;
 }
 .button-google-inscription:before{
     position: absolute;
-    left: 15px;
+    left: 17px;
+    top: 14px;
     content: "";
     display: inline-block;
     width: 25px;
@@ -185,28 +172,33 @@
     background-image: url("../img/spritesheet.png");
     background-position: -20px -20px;
 }
+.button-google-inscription:after,.button-facebook-inscription:after{
+     position: absolute;
+     left: 52px;
+     top: 11px;
+     content: "";
+     display: inline-block;
+     height: 22px;
+     width: 1px;
+     background-color: #7d7873;
+ }
 .registration-button:after{
     content: "";
     display: block;
     clear: both;
 }
-
-
 .separator-or{
     position: relative;
     text-align: center;
-    margin: 33px 0 20px 0;
+    margin: 33px 0 18px 0;
 }
 .separator-or-inscription{
-    font-family: sans-serif;
-    display: inline-block;
     color: #848484;
     font-size: 14px;
-
 }
 .separator-or-inscription:before{
     position: absolute;
-    top: 10px;
+    top: 8px;
     left: 0;
     content: "";
     display: inline-block;
@@ -216,7 +208,7 @@
 }
 .separator-or-inscription:after{
     position: absolute;
-    top: 10px;
+    top: 8px;
     right: 0;
     content: "";
     display: inline-block;
@@ -224,91 +216,64 @@
     height: 1px;
     background-color: #848484;
 }
-input[type="text"],input[type="email"],input[type="password"]{
-    padding: 18px 0 18px 18px;
+.input-line{
     width: 100%;
-    box-sizing: border-box;
+    outline: none;
+    padding: 18px 0 18px 17px;
     font-size: 14px;
     border-radius: 5px;
-    border: #848484 solid 1px;
+    border: #eaeaea solid 1px;
     margin: 9px 0 9px 0;
-
 }
-input[type="text"]:focus,input[type="text"]:active,input[type="email"]:focus,input[type="email"]:active,input[type="password"]:focus,input[type="password"]:active{
-    outline: transparent;
-    border: 1px solid transparent;
-    box-shadow: 0 0 4px  4px gray;
+.input-line:active,.input-line:focus{
+    border-color: transparent;
+    box-shadow: 0 0 10px  1px #d6d6d6;
 }
-.registration-checkbox{
-    font-family: sans-serif;
-    font-size: 14px;
+.input-checkbox-label{
     display: inline-block;
-    margin: 25px 0 25px 0;
-
+    font-size: 14px;
+    position: relative;
+    margin: 20px 0 25px 0;
 }
-.registration-checkbox-rules{
-    color: #3cb878;
+.input-checkbox{
+    display: none;
 }
-.registration-checkbox-rules:hover{
-    text-decoration: underline;
+.input-checkbox + .input-checkbox-label:before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #848484;
+    border-radius: 4px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
-
-.registration-button-submit{
+.input-checkbox:checked + .input-checkbox-label:after{
+    content: "";
+    display: inline-block;
+    height: 4px;
+    width: 10px;
+    border-radius: 2px;
+    border-left: 4px solid #3cb878 ;
+    border-bottom:4px solid #3cb878;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+.input-button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 4px;
     width: 100%;
     height: 45px;
-    background-color: #3cb878;
     color: white;
+    background-color: #3cb878;
     font-size: 16px;
+
 }
-.registration-button-submit:hover{
-    background-color: #329a65;
+.input-button:hover{
+    background-color: #329a65 ;
 }
 
-
-input[type="checkbox"]:checked,
-input[type="checkbox"]:not(:checked){
-    position: absolute;
-    left: -9999px;
-}
-input[type="checkbox"]:checked + label,
-input[type="checkbox"]:not(:checked) + label{
-    display: inline-block;
-    position: relative;
-    padding-left: 28px;
-    line-height: 20px;
-    cursor: pointer;
-}
-input[type="checkbox"]:checked + label:before,
-input[type="checkbox"]:not(:checked) + label:before{
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 18px;
-    height: 18px;
-    border: 1px solid #dddddd;
-    background-color: #ffffff;
-    border-radius: 2px;
-}
-input[type="checkbox"]:checked + label:after,
-input[type="checkbox"]:not(:checked) + label:after{
-    content: "";
-    position: absolute;
-    left: 3px;
-    top: 4px;
-    width: 10px;
-    height: 5px;
-    border-radius: 1px;
-    border-left: 4px solid #3cb878;
-    border-bottom: 4px solid #3cb878;
-    transform: rotate(-45deg);
-}
-input[type="checkbox"]:not(:checked) + label:after{
-    opacity: 0;
-}
-input[type="checkbox"]:checked + label:after{
-    opacity: 1;
-}
-.footer{
-    padding-bottom: 100px;
-}
