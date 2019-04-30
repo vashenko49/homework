@@ -1,160 +1,143 @@
 .first-table{
     border-collapse: collapse;
     border: 22px solid #3a4965;
-    font-family: Arimo;
+    font-family: Arimo, sans-serif;
     text-transform: uppercase;
     text-align: center;
     position: relative;
-    min-width: 845px;
+    font-size: 16px;
+    color: #848484;
 }
 .table-column{
-    height: 70px;
+    padding: 20px 10px 20px 10px;
+    border-left:1px solid  #d8d8d8;
 }
-.table-row:nth-child(2){
-    height: 88px;
-    background-color: #fafafa;
-}
-.table-row:last-child{
-    height: 110px;
-}
-.table-column:first-child{
-    width: 310px;
-}
-.table-column:nth-child(n+2){
-    width: 278px;
-}
-.table-row:nth-child(2n+3){
+.table-row:nth-child(odd){
     background-color: #f2f2f2;
 }
-.table-row:nth-child(2n+4){
+.table-row:nth-child(even){
     background-color: #e3e3e3;
-}
-.table-row:first-child .table-column:first-child{
-    background-color: #fafafa;
-}
-.table-row:last-child .table-column:nth-child(n+2){
-    background-color: #eeeeee;
-}
-.table-row:last-child .table-column:first-child{
-    background-color: #dddddd;
-}
-.table-row:nth-child(2){
-    color: #484848;
-}
-.table-row:nth-child(n+3){
-    color: #848484;
 }
 .icon-something{
     padding-right: 13px;
 }
-.table-row:first-child .table-column:nth-child(n+2){
+.table-column-choose, .table-row:nth-child(2){
+    color: #484848;
+    background-color: #fafafa;
+}
+.table-column-choose{
+    font-size: 18px;
+}
+.first-row-first-column{
+    display: block;
+    font-size: 30px;
+}
+
+.table-column-standard, .table-column-ultimate, .table-column-premium{
     color: white;
-    font-size: 27px;
+    font-size: 24px;
 }
 .table-column-standard{
     background-color: #89c331;
 }
 .table-column-ultimate{
     background-color: #f04a56;
+    border-left-color: #89c331;
+
 }
 .table-column-premium{
     background-color: #20807c;
+    border-left-color: #f04a56;
 }
-
 .table-prise{
     position: relative;
-    font-size: 16px;
 }
 .table-prise:before{
     content: "";
     display: inline-block;
     font-size: 60px;
-    font-weight:bold ;
+    font-weight: bold;
 }
 .table-prise:after{
-    position: absolute;
     content: ".99";
     display: inline-block;
     font-size: 24px;
     font-weight: bold;
-    bottom: 23px;
-    left: 100px;
+    position: absolute;
+    bottom: 22px;
+    left: 99px;
 }
-.table-row:nth-child(2) .table-column:first-child .table-prise:before{
+.table-prise-to-standard:before{
     content: "$17";
 }
-.table-row:nth-child(2) .table-column:nth-child(2) .table-prise:before{
+.table-prise-to-ultimate:before{
     content: "$37";
 }
-.table-row:nth-child(2) .table-column:last-child .table-prise:before{
+.table-prise-to-premium:before{
     content: "$97";
 }
-.first-row-first-column{
-    display: block;
-    font-size: 20px;
+.table-row:last-child{
+    background-color: #f4f4f4;
+}
+.table-column-to-contact{
+    background-color: #dddddd;
+    border-right-color: #b5b6b9;
 }
 .table-button{
-    display: block;
-    margin: 0 auto;
     position: relative;
     font-size: 16px;
+    font-weight: bold;
     color: white;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 4px;
+    display: inline-block;
     width: 190px;
-    height: 50px;
-    outline: none;
+    padding: 15px 0 15px 0;
+    border-radius: 4px;
 }
-
 .table-button:after{
     content: "";
     display: inline-block;
-    width: 190px;
-    height: 7px;
     position: absolute;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    top:43px;
-    right: 0;
+    bottom: 0;
+    left:0 ;
+    width: 190px;
+    height: 6px;
+    border-bottom-left-radius:4px ;
+    border-bottom-right-radius: 4px ;
 }
-.table-button-choose{
+.table-button-to-contact{
     background-color: #484848;
 }
-.table-button-choose:hover{
-     background-color: #404040;
- }
-.table-button-choose:after{
+.table-button-to-contact:hover{
     background-color: #404040;
 }
-.table-button-standard{
+.table-button-to-contact:after{
+    background-color: #404040;
+}
+.table-button-to-standard{
     background-color: #89c331;
 }
-.table-button-standard:hover{
+.table-button-to-standard:hover{
+    background-color: #79b027;
+
+}
+.table-button-to-standard:after{
     background-color: #79b027;
 }
-.table-button-standard:after{
-    background-color: #79b027;
-}
-.table-button-ultimate{
+.table-button-to-ultimate{
     background-color: #f04a56;
 }
-.table-button-ultimate:hover{
+.table-button-to-ultimate:hover{
     background-color: #df3a46;
 }
-.table-button-ultimate:after{
+.table-button-to-ultimate:after{
     background-color: #df3a46;
 }
-.table-button-premium{
+.table-button-to-premium{
     background-color: #20807c;
 }
-.table-button-premium:hover{
+.table-button-to-premium:hover{
     background-color: #16736f;
 }
-.table-button-premium:after{
+.table-button-to-premium:after{
     background-color: #16736f;
-}
-.table-column{
-    border-left:1px solid  #d8d8d8;
-    border-right:1px solid  #d8d8d8;
 }
