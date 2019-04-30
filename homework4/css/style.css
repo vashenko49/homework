@@ -1,8 +1,8 @@
 .main-div-on-pager{
     background: url("../img/rana-sawalha-364253-unsplash.png") no-repeat;
     background-size:cover;
-    min-width: 725px;
-    min-height: 105vh;
+    height: 100vh;
+    min-height: 870px;
     font-family: sans-serif;
 }
 .header-on-page{
@@ -77,17 +77,17 @@
 .effect-underline:hover{
     text-decoration: underline;
 }
-.header-on-page:after{
-     content: "";
-     display: block;
-     clear: both;
- }
+
 .registration-window{
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
     width: 320px;
     padding: 30px 60px 30px 60px;
     background-color: white;
     border-radius: 10px;
-    margin: 65px auto;
+    margin: calc((100vh - 65px - 686px)/2) auto calc((100vh - 65px - 686px)/2)  auto;
 }
 
 .registration-sign-in{
@@ -108,11 +108,6 @@
     float: right;
     font-size: 14px;
     color: #3cb878;
-}
-.registration-window-log-in:after{
-    content: "";
-    display: block;
-    clear: both;
 }
 .registration-button{
     margin-top: 15px;
@@ -182,11 +177,6 @@
      width: 1px;
      background-color: #7d7873;
  }
-.registration-button:after{
-    content: "";
-    display: block;
-    clear: both;
-}
 .separator-or{
     position: relative;
     text-align: center;
@@ -277,3 +267,8 @@
     background-color: #329a65 ;
 }
 
+.end-block-clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
