@@ -37,6 +37,8 @@
     display: block;
     font-size: 28px;
 }
+
+/*первый столбец без первой строки*/
 .table-row:nth-child(n+2) .table-column:first-child{
     font-size: 29px;
     color: white;
@@ -108,6 +110,7 @@
 .table-button:hover{
     background-color: #404040;
 }
+/*подсветка выбраного тарифа*/
 .table-row:nth-child(2) .table-column:hover:before{
     content: "";
     display: inline-block;
