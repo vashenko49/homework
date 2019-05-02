@@ -87,7 +87,11 @@
     padding: 30px 60px 30px 60px;
     background-color: white;
     border-radius: 10px;
+<<<<<<< HEAD
     margin: calc((100vh - 65px - 686px)/2) auto ;
+=======
+    margin: calc((100vh - 65px - 686px)/2) auto;
+>>>>>>> 480b9044c1be51d465a25fd79a55395966124b03
 }
 
 .registration-sign-in{
