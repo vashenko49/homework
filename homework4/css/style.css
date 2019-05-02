@@ -87,7 +87,7 @@
     padding: 30px 60px 30px 60px;
     background-color: white;
     border-radius: 10px;
-    margin: calc((100vh - 65px - 686px)/2) auto calc((100vh - 65px - 686px)/2)  auto;
+    margin: calc((100vh - 65px - 686px)/2) auto ;
 }
 
 .registration-sign-in{
@@ -265,6 +265,12 @@
 }
 .input-button:hover{
     background-color: #329a65 ;
+}
+
+@media screen and (max-height: 800px) {
+    .registration-window {
+       margin: 23px auto;
+    }
 }
 
 .end-block-clear:after{
