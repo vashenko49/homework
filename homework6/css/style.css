@@ -1,47 +1,95 @@
-.grid{
-    display: grid;
-    grid-gap: 10px;
-    grid-template-areas: "header" "article" "aside" "footer";
+.full-page{
+    font-family: "Open Sans",sans-serif;
+    min-width: 1000px;
 }
-header{
-    grid-area: header;
+.header{
+    background-color: #1d2124;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-article{
-    grid-area: article;
+.header-slogan,.header-list,.header-icon-search{
+    color: white;
 }
-aside{
-    grid-area: aside;
+.header-list{
+    text-transform: uppercase;
 }
-footer{
-    grid-area: footer;
+.header-logo-slogan{
+    display: flex;
+    align-items:center;
+    min-width: 183px;
+    max-width: 183px;
+    height: 100%;
+    justify-content: space-between;
 }
-@media (min-width: 640px) {
-    .grid {
-        grid-template-columns: 1fr 2fr;
-        grid-template-areas:
-                "header header"
-                "aside article"
-                "footer footer"
-    }
+.header-logo{
+    width: 81px;
+    background-color: #0e1120;
+    height: 100%;
+    position: relative;
 }
-@media (min-width: 840px) {
-    .grid {
-        grid-template-columns: 1fr 3fr;
-        grid-template-areas:
-                "header header"
-                "aside article"
-                "aside footer"
-    }
+.header-logo > img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
-.grid > * {
-    background-color: #1b67a8;
-    border: 1px solid #212941;
-    border-radius: 5px;
-    padding: 8px 15px;
-    color: #ffffff;
-    font-size: 18px;
+.header-slogan{
+    font-size: 22px;
 }
+.header-icon-search{
+    width: 68px;
+    height: 100%;
+    background-color: #0e1120;
+    position: relative;
+}
+.header-icon-search >i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.header-all-list{
+    display: flex;
+    min-width: 700px;
+    justify-content: space-between;
+}
+.parallax-background{
 
-.grid > *:nth-child(odd) {
-    background-color: #1ac66c;
+}
+.wrapper-house-selection{
+    background-color: #f2f2f2;
+}
+.house-selection{
+    width: 1168px;
+    text-align: center;
+    margin:  0 auto;
+}
+.house-selection-slogan{
+    text-transform: uppercase;
+    font-size: 27px;
+    color: #18b4cf ;
+    font-weight: bold;
+    padding: 46px 0 38px 0;
+}
+.choice-options{
+    max-height: 870px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+.block-with-img-address{
+    width: 370px;
+    background-color: white;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 31px
+}
+.house-address{
+    padding: 15px 0 15px 0;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
 }
