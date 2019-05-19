@@ -1,3 +1,14 @@
+html{
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 .full-page{
     font-family: "Open Sans",sans-serif;
     min-width: 1165px;
@@ -56,14 +67,17 @@
 }
 /*#end region header
 ------------------------------------------------------------------------*/
+
 /*#Regoin first parallax background
 ---------------------------------------------*/
 .header-background{
     height: 400px;
     text-align: center;
-    box-sizing: border-box;
+}
+.header-background:before{
     background: linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/bg/header-bg.jpeg") 5% 95% /cover ;
 }
+
 .header-background-slogan, .header-background-button{
     color: white;
 }
@@ -147,10 +161,10 @@
 -------------------------------------------------------------*/
 .main-background-parallax{
     height: 590px;
-    box-sizing: border-box;
+}
+.main-background-parallax:before{
     background: linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("../img/bg/parallax-bg.jpeg") 98% 2% /cover ;
 }
-
 .content-on-background{
     padding-top: 195px;
     justify-content: center;
@@ -179,6 +193,7 @@
 }
 /*#End region second parallax background our most popular client
 ------------------------------------------------------------------------*/
+
 /*#Region top rated grid element
 ---------------------------------*/
 .top-rated{
@@ -294,13 +309,28 @@
 }
 /*#End region footer
 ------------------------------------------------------------------------*/
+
 /*Region with parallax background instrument
 ---------------------------------*/
 .parallax-block{
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
+    position: relative;
+    padding: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    transform-style: inherit;
 
+}
+.parallax-block:before{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: inherit;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateZ(-1px) scale(2.1);
+    z-index: -1;
+}
 /*End region with parallax background instrument
 ------------------------------------------------------------------------*/
