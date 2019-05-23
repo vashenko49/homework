@@ -1,7 +1,6 @@
 # folder ignore
 */.idea/
 */psd-photoshop/
-homework7/
 homework8_optional/
 # files ignore
 *.iml
