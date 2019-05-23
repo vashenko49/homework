@@ -19,7 +19,6 @@
     animation: crawl  linear;
     animation-duration:30s ;
     animation-iteration-count: infinite;
-
 }
 @keyframes crawl {
     0% {
@@ -27,7 +26,7 @@
         transform: rotateX(40deg) translateZ(0);
     }
     100% {
-        top: -2500px;
-        transform: rotateX(40deg) translateZ(-2500px);
+        top: -3500px;
+        transform: rotateX(35deg) translateZ(-2500px);
     }
 }
