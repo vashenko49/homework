@@ -1,0 +1,156 @@
+html{
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: "Open Sans", sans-serif;
+    min-width: 1075px;
+}
+.container{
+    min-width: 1075px;
+    width: 1100px;
+    margin: 0 auto;
+}
+/*Region Header
+-------------------------------*/
+.header-block{
+    height: 600px;
+    position: relative;
+}
+.header-block:before{
+    background: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/bg1.jpg) 75% 25%;
+
+}
+.header-bar{
+    background-color: white;
+    margin-top: 32px;
+    padding: 35px 0 35px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-bar-list{
+    display: flex;
+    min-width: 680px;
+    justify-content: space-around;
+}
+.header-bar-logo, .header-bar-list-item{
+    color: #3e4c4e;
+    font-weight: 900;
+}
+.header-bar-logo{
+    font-size: 36px;
+    font-weight: 200;
+}
+.header-bar-logo-redid{
+    text-transform: uppercase;
+    color: #14afca;
+}
+.header-bar-list-item{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.header-bar-logo:hover, .header-bar-list-item:hover{
+    color: #14afca;
+}
+.header-slogan{
+    color: white;
+    font-family: Futura, sans-serif;
+    font-size: 52px;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 980px;
+    margin-top: 175px;
+}
+/*End Region Header
+-------------------------------*/
+
+/*Region content what
+---------------------------------*/
+.content-what{
+    position: relative;
+    perspective: 1px;
+    background-color: #fff;
+    text-align: center;
+    height: 400px;
+    padding-top:95px ;
+}
+.content-what-text{
+    width: 1075px;
+    margin: 0 auto ;
+}
+.content-what:before{
+    content: "";
+    display: inline-block;
+    border-top: 54px solid transparent;
+    border-left: 50vw solid white;
+    border-right: 50vw solid white;
+    position: absolute;
+    top: -54px;
+    left: 0;
+    right: 0;
+    perspective: 1px;
+}
+.content-what:after{
+    content: "";
+    display: inline-block;
+    border-top: 54px solid white;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    position: absolute;
+    bottom: -54px;
+    left: 0;
+    right: 0;
+    perspective: 1px;
+}
+.content-what-text>h2{
+    font-size: 60px;
+    font-weight: bold;
+    color: #14afca;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+.content-what-text>h3{
+    font-size: 18px;
+    color: #424f57;
+    margin-bottom: 37px;
+}
+.content-what-text>p{
+    font-size: 15px;
+    color: #767e83;
+}
+/*End Region content what
+-------------------------------*/
+/*Region with parallax background instrument
+---------------------------------*/
+.parallax-block{
+    position: relative;
+    padding: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    transform-style: inherit;
+
+}
+.parallax-block:before{
+    content: "";
+    position: absolute;
+    height: 100vh;
+    min-width: 1075px;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateZ(-5px) translateY(-100px) scale(6);
+    z-index: -1;
+    background-size: cover;
+}
+/*End region with parallax background instrument
+------------------------------------------------------------------------*/

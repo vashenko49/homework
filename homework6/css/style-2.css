@@ -318,7 +318,6 @@ body{
     width: 100vw;
     box-sizing: border-box;
     transform-style: inherit;
-
 }
 .parallax-block:before{
     content: "";
