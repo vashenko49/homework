@@ -19,7 +19,7 @@ body{
     font-weight: bold;
     color: #14afca;
     text-transform: uppercase;
-    margin-bottom: 22px;
+
 
 }
 .pre-slogan-on_page{
@@ -128,6 +128,7 @@ body{
 }
 .companies-items-logo{
     grid-area: companies-items-logo;
+    align-self: end;
 }
 .companies-items-slogan{
     grid-area: companies-items-slogan;
@@ -261,6 +262,10 @@ body{
 
 }
 
+.footer-block + .testimonials-pre-slogan:after{
+    content: none;
+}
+
 /*!*End Region testimonials-block/
 /*-------------------------------*!*/
 
@@ -317,8 +322,8 @@ body{
     content: "";
     display: inline-block;
     border-top: 54px solid transparent;
-    border-left: 50vw solid white;
-    border-right: 50vw solid white;
+    border-left: 49vw solid white;
+    border-right: 49vw solid white;
     position: absolute;
     top: -54px;
     left: 0;
@@ -328,8 +333,8 @@ body{
     content: "";
     display: inline-block;
     border-top: 54px solid white;
-    border-left: 50vw solid transparent;
-    border-right: 50vw solid transparent;
+    border-left: 49vw solid transparent;
+    border-right: 49vw solid transparent;
     position: absolute;
     bottom: -54px;
     left: 0;
