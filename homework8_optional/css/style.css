@@ -1,34 +1,44 @@
 html{
-    height: 100%;
     overflow: hidden;
 }
 body{
     perspective: 1px;
     transform-style: preserve-3d;
-    height: 100%;
-    overflow-y: scroll;
+    height: 100vh;
     overflow-x: hidden;
-    font-family: "Open Sans", sans-serif;
-    min-width: 1075px;
+    overflow-y: scroll;
+    font-size: 18px;
+    font-family: "Open Sans",sans-serif;
 }
 .container{
-    min-width: 1075px;
-    width: 1100px;
+    width: 1075px;
     margin: 0 auto;
 }
-/*Region Header
--------------------------------*/
-.header-block{
-    height: 600px;
-    position: relative;
-}
-.header-block:before{
-    background: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/bg1.jpg) 75% 25%;
+.slogan-on-page{
+    font-size: 60px;
+    font-weight: bold;
+    color: #14afca;
+    text-transform: uppercase;
+    margin-bottom: 22px;
 
+}
+.pre-slogan-on_page{
+    font-size: 18px;
+    color: #424f57;
+    margin-bottom: 37px;
+}
+.text-in-page{
+    font-size: 15px;
+    color: #767e83;
+}
+/*!*Region Header*/
+/*-------------------------------*!*/
+.header-block{
+    padding-top: 15px;
+    height: 600px;
 }
 .header-bar{
     background-color: white;
-    margin-top: 32px;
     padding: 35px 0 35px 0;
     display: flex;
     justify-content: space-around;
@@ -69,24 +79,241 @@ body{
     min-width: 980px;
     margin-top: 175px;
 }
-/*End Region Header
--------------------------------*/
+/*!*End Region Header*/
+/*-------------------------------*!*/
 
-/*Region content what
----------------------------------*/
+/*!*!*Region content what*!*/
+/*!*---------------------------------*!*!*/
 .content-what{
-    position: relative;
-    perspective: 1px;
     background-color: #fff;
     text-align: center;
     height: 400px;
-    padding-top:95px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .content-what-text{
     width: 1075px;
     margin: 0 auto ;
 }
-.content-what:before{
+
+
+/*End Region content what
+-------------------------------*/
+/*Region with companies
+---------------------------------*/
+
+
+.companies-block{
+    height: 650px;
+    padding-top: 40px;
+    width: 100vw;
+
+}
+.companies-list{
+    display: grid;
+    max-width: 1075px;
+    min-width: 1000px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+            "companies-items-logo companies-items-logo companies-items-logo companies-items-logo"
+            "companies-items-slogan companies-items-slogan companies-items-slogan companies-items-slogan"
+            "companies-items1 companies-items2 companies-items3 companies-items4"
+            "companies-items5 companies-items6 companies-items7 companies-items8";
+    align-items: center;
+    justify-items: center;
+
+}
+.companies-items-logo{
+    grid-area: companies-items-logo;
+}
+.companies-items-slogan{
+    grid-area: companies-items-slogan;
+    color: white;
+}
+.companies-items1{
+    grid-area: companies-items1;
+}
+.companies-items2{
+    grid-area: companies-items2;
+}
+.companies-items3{
+    grid-area: companies-items3;
+}
+.companies-items4{
+    grid-area: companies-items4;
+}
+.companies-items5{
+    grid-area: companies-items5;
+}
+.companies-items6{
+    grid-area: companies-items6;
+}
+.companies-items7{
+    grid-area: companies-items7;
+}
+.companies-items8{
+    grid-area: companies-items8;
+}
+/*!*End Region companies*/
+/*-------------------------------*!*/
+
+/*!*Region with parallax background instrument*/
+/*-------------------------------*!*/
+.block-meet-us{
+    height: 685px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 70px 70px 350px;
+    grid-template-areas:
+            "meet-us-logo meet-us-logo meet-us-logo"
+            "meet-us-slogan meet-us-slogan meet-us-slogan"
+            "block-item1 block-item2 block-item3";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    grid-column-gap: 50px;
+
+}
+.meet-us-logo{
+    grid-area: meet-us-logo;
+    align-self: center;
+}
+.meet-us-slogan{
+    grid-area: meet-us-slogan;
+    align-self: end;
+}
+
+.block-item1{
+    grid-area: block-item1;
+}
+.block-item2{
+    grid-area: block-item2;
+}
+.block-item3{
+    grid-area: block-item3;
+}
+.meet-us-block-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.meet-us-block-items>img{
+    object-fit: contain;
+}
+/*!*End Region companies*/
+/*-------------------------------*!*/
+
+
+/*!*Region testimonials-block/
+/*---------------------------------*!*/
+.testimonials-block{
+    padding-top: 54px;
+    height: 700px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials-pre-slogan{
+    color: #e0dfdf;
+}
+.testimonials-text{
+    font-style: italic;
+    color: #d3cccc;
+}
+.testimonials-author{
+    text-align: right;
+    font-style: italic;
+    color: #ffffff;
+    font-weight: bold;
+}
+/*!*End Region testimonials-block/
+/*-------------------------------*!*/
+
+
+/*!*Region with parallax background instrument*/
+/*---------------------------------*!*/
+
+.footer-block{
+    background-color: white;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-block-equation{
+    font-size: 30px;
+    font-family: Futura,sans-serif;
+    font-weight: bold;
+    color: #424f57;
+    margin-bottom: 100px;
+}
+.footer-block-author{
+    font-size: 15px ;
+    font-style: italic;
+
+}
+
+/*!*End Region testimonials-block/
+/*-------------------------------*!*/
+
+
+/*!*Region with parallax background instrument*/
+/*---------------------------------*!*/
+.header-block:before{
+    background: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/bg1.jpg) 50% 50%/cover;
+    height: inherit;
+    z-index: -3;
+}
+.companies-block:before{
+    background: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/bg2.jpg) 50% 50%/cover;
+    height: inherit;
+    z-index: -9;
+}
+.testimonials-block:before{
+    background: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/bg3.jpg) 50% 50%/cover;
+    height: inherit;
+    z-index: -6;
+}
+.static-bg-block{
+    background-size: cover;
+    z-index: 2;
+    position: relative;
+}
+.parallax-bg-block{
+    perspective: 1px;
+    transform-style: preserve-3d;
+    position: relative;
+    box-sizing: border-box;
+}
+.parallax-bg-block:before{
+    content:"";
+    width: 100vw;
+    top:0;
+    left:0;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    transform:translateZ(-1px) scale(3.6);
+}
+
+/*!*!*End region with parallax background instrument*!*/
+/*!*------------------------------------------------------------------------*!*!*/
+/*!*!*Region with parallax background instrument*!*/
+/*!*---------------------------------*!*!*/
+.triangles-top-bottom{
+
+}
+.triangles-top-bottom:before{
     content: "";
     display: inline-block;
     border-top: 54px solid transparent;
@@ -96,9 +323,8 @@ body{
     top: -54px;
     left: 0;
     right: 0;
-    perspective: 1px;
 }
-.content-what:after{
+.triangles-top-bottom:after{
     content: "";
     display: inline-block;
     border-top: 54px solid white;
@@ -108,49 +334,13 @@ body{
     bottom: -54px;
     left: 0;
     right: 0;
-    perspective: 1px;
 }
-.content-what-text>h2{
-    font-size: 60px;
-    font-weight: bold;
-    color: #14afca;
-    text-transform: uppercase;
-    margin-bottom: 22px;
-}
-.content-what-text>h3{
-    font-size: 18px;
-    color: #424f57;
-    margin-bottom: 37px;
-}
-.content-what-text>p{
-    font-size: 15px;
-    color: #767e83;
-}
-/*End Region content what
--------------------------------*/
-/*Region with parallax background instrument
----------------------------------*/
-.parallax-block{
-    position: relative;
-    padding: 0;
-    width: 100vw;
-    box-sizing: border-box;
-    transform-style: inherit;
+/*!*!*End region with parallax background instrument*!*/
+/*!*------------------------------------------------------------------------*!*!*/
 
-}
-.parallax-block:before{
-    content: "";
-    position: absolute;
-    height: 100vh;
-    min-width: 1075px;
-    width: 100vw;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transform: translateZ(-5px) translateY(-100px) scale(6);
-    z-index: -1;
-    background-size: cover;
-}
-/*End region with parallax background instrument
-------------------------------------------------------------------------*/
+
+
+
+
+
+
